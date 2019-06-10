@@ -1,29 +1,19 @@
-//Destructuring de objetos
+//Objet Literal Enhancement es lo contrario al Objet Destructuring mientras este ultimo se encarga de obtener los valores el Literal Enhancemen
 
-const aprendiendoJS = {
-  version: {
-    nueva: "ES6+",
-    anterior: "ES5"
-  },
-  frameworks: ["React", "VueJS", "AngularJS"]
-};
+//objet Literal Enhancement
 
-//desrtucturing es extraer valores de un objeto
-// console.log(aprendiendoJS);
+const banda = "Oasis";
+const genero = "Rock";
+const canciones = ["Live Forever", "Wondereworld", "Cast no shadows"];
 
-//Destructuring forma Aterior
-// let version = aprendiendoJS.version.nueva;
-// let frameworks = aprendiendoJS.frameworks[1];
+//Forma anterior
 
-// console.log(frameworks);
+// const oasis = {
+//   banda: band,
+//   genero: genero,
+//   caciones: canciones
+// };
 
-//Destructuring forma Nueva
+const oasis = { banda, genero, canciones };
 
-let { version, frameworks } = aprendiendoJS;
-console.log(version);
-console.log(frameworks);
-
-//tienes que pasarle el mismo nombre de las propiedades de tu objeto para que sepa donde dirigirse
-
-let { nueva } = aprendiendoJS.version;
-console.log(nueva);
+console.log(oasis);
